@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css-E5-Puzzle.css">
+</head>
+<body>
+<script>
+        let soPhut=Number(prompt("Nhap so phut goi: "));
+        let cuocPhi=0;
+        if (soPhut>=100) {
+            cuocPhi=50*300+50*400+(soPhut-100)*500;
+        } else if(soPhut>=50) {
+            cuocPhi=50*300+(soPhut-50)*400;
+        } else {
+            cuocPhi=soPhut*300;
+        }
+        alert('Cuoc phi dien thoai phai tra la: '+cuocPhi);
+</script>
+</body>
+</html>

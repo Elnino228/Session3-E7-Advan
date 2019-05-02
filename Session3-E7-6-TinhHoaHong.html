@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css-E5-Puzzle.css">
+</head>
+<body>
+<script>
+        let doanhSo=Number(prompt("Nhap doanh so ban hang ="));
+        let hoaHong;
+        if (doanhSo>=300) {
+            hoaHong="5%";
+        } else if(doanhSo>=200) {
+            hoaHong="3%";
+        } else if (doanhSo>=100) {
+            hoaHong="2%";
+        } else if (doanhSo>=50) {
+            hoaHong="1%";
+        } else {
+            hoaHong="0%";
+        }
+        alert('Ban nhan duoc hoa hong la: '+hoaHong);
+</script>
+</body>
+</html>

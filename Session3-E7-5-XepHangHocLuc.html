@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css-E5-Puzzle.css">
+</head>
+<body>
+<script>
+        let diemKT=Number(prompt("Nhap diem kiem tra ="));
+        let diemThiGiuaKy=Number(prompt("Nhap diem thi giua ky ="));
+        let diemThiCuoiKy=Number(prompt("Nhap diem thi cuoi ky ="));
+        let dtb=((diemKT+diemThiGiuaKy*2)/3*0.3)+diemThiCuoiKy*0.7;
+        let xepHang;
+        if (dtb>=8.5) {
+            xepHang="Xuat sac";
+        } else if(dtb>=7) {
+            xepHang="Gioi";
+        } else if (dtb>=5.5) {
+            xepHang='Kha';
+        } else if (dtb>=4) {
+            xepHang='Trung binh';
+        } else {
+            xepHang='Yeu';
+        }
+        alert('Hoc luc cua ban dat loai: '+xepHang);
+</script>
+</body>
+</html>
